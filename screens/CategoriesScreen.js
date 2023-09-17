@@ -12,10 +12,16 @@ function CategoriesScreen({ navigation }) {
             });
         };
 
-        return <CategoryGridTile title={itemData.item.title} color={itemData.item.color} onPress={pressHandler} />;
+        return <CategoryGridTile
+            title={itemData.item.title}
+            color={itemData.item.color}
+            onPress={pressHandler} />;
     };
 
-    return <FlatList data={CATEGORIES} keyExtractor={(item) => item.id} renderItem={renderCategoryItem} numColumns={2} />
+    return <FlatList
+        data={CATEGORIES} keyExtractor={(item) => item.id}
+        renderItem={renderCategoryItem}
+        numColumns={2} />
 }
 
 
