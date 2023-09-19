@@ -16,6 +16,8 @@ function TabNavigator() {
             headerTintColor: 'white',
             headerTitleAlign: 'center',
             tabBarStyle: { backgroundColor: '#351401' },
+            tabBarActiveTintColor: 'white',
+            tabBarInactiveTintColor: '#4D5551',
         }} >
             <Tab.Screen name="Categories" component={CategoriesScreen} options={{
                 tabBarIcon: ({ color, size }) => (
